@@ -1,0 +1,290 @@
+html{
+	font-size: 100%;
+	box-sizing: border-box;
+}
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 0.8125rem;
+	line-height: 1.3;
+}
+:root{
+	--Moderate-violet: hsl(263, 55%, 52%);	/*#7541c8*/
+	--Very-dark-grayish-blue: hsl(217, 19%, 35%);	/*#48556a*/
+	--Very-dark-blackish-blue: hsl(219, 29%, 14%);	/*#19212e*/
+	--White: hsl(0, 0%, 100%);
+
+	--Light-gray: hsl(0, 0%, 81%);	/*#cfcfcf*/
+	--Light-grayish-blue: hsl(210, 46%, 95%);	/*#ecf2f8*/
+	--idk: 43em;
+}
+
+
+
+
+/*REVIEW SECTION*/
+
+.review{
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--Light-grayish-blue);
+}
+.review__container{
+	width: 100%;
+	margin: 0 auto;
+}
+@media (min-width: 71.5em){
+	.review__container{
+		width: 69.5rem;
+	}
+}
+.review__overlay{
+	
+}
+.review__grid{
+	display: grid;
+	grid-gap: 1.5rem 1.875rem;
+}
+
+@media (max-width: 42.9375em){
+	.review__grid{		
+		grid-gap: 1.5rem;
+	}
+}
+
+@media (min-width: 71.5em){
+	.review{
+		display: grid;
+		align-content: center;
+	}
+	.review__grid{
+		grid-template-areas: 
+			"daniel daniel jonathan kira"
+			"jeanette patrick patrick kira"
+		;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.review__item{
+	padding-left: 2rem;
+	padding-right: 1.25rem;
+	padding-bottom: 1.875rem;
+	border-radius: 0.75rem;
+}
+
+@media (max-width: 42.9375em){
+	.review__item{
+		margin: 0 1.5rem;
+	}
+	.review__item:first-child{
+		margin-top: 4.5rem;
+	}
+	.review__item:last-child{
+		margin-bottom: 4.5rem;
+	}
+}
+
+
+.item__about{
+	display: grid;
+	column-gap: 1rem;
+	grid-template-columns: 2.125rem 1fr;
+	margin-top: 1.5rem;
+	margin-bottom: 1.25rem;
+}
+.review__image__container{
+	width: 2.125rem;
+	height: 2.125rem;
+}
+.review__image{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.review__title h3{
+	font-weight: 500;
+	font-size: 1.26875rem;
+	margin-bottom: 1.25rem;
+}
+.review__text{
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	padding-right: 0.875rem;
+}
+
+
+@media (min-width: 43em){
+	.item__daniel{
+		grid-area: daniel;
+	}
+	.item__jonathan{
+		grid-area: jonathan;
+	}
+	.item__jeanette{
+		grid-area: jeanette;
+	}
+	.item__patrick{
+		grid-area: patrick;
+	}
+	.item__kira{
+		grid-area: kira;
+	}
+}
+
+/*For Tablet*/
+
+@media (min-width: 43em) and (max-width: 71.5em){
+	.review__grid{
+		grid-template-areas:
+			"daniel daniel"
+			"jonathan kira"
+			"jeanette kira"
+			"patrick patrick"
+		;
+	}
+	.review__container{
+		width: 40rem;
+	}
+}
+
+@media (min-width: 43em) and (max-width: 71.5em){
+	.review__grid{
+		grid-template-areas:
+			"daniel daniel"
+			"jonathan kira"
+			"jeanette kira"
+			"patrick patrick"
+		;
+	}
+	.review__container{
+		width: 40rem;
+	}
+	.review__item:first-child{
+		margin-top: 2rem;
+	}
+	.review__item:nth-child(4){
+		margin-bottom: 2rem;
+	}
+}
+
+@media (min-width: 57rem) and (max-width: 71.5em){
+	.review__container{
+		width: 55rem;
+	}	
+}
+
+
+
+/*Daniel*/
+
+.item__daniel{
+	background-image: url("../images/bg-pattern-quotation.svg");
+	background-size: 6.5rem;
+    background-repeat: no-repeat;
+    background-position: right 1.875rem top;
+	background-color: var(--Moderate-violet);
+}
+@media (min-width: 71.5em){
+	.item__daniel{
+		background-position: right 5rem top;
+	}
+}
+.name__daniel{
+	color: var(--White);
+}
+.subname__daniel{
+	color: var(--White);
+	filter: opacity(50%);
+}
+.title__daniel h3{
+	color: var(--White);
+}
+.text__daniel{
+	color: var(--White);
+	filter: opacity(50%);
+}
+.item__daniel .review__image{
+	border: 2px solid hsl(0, 0%, 100%, 0.30);
+	background-color: var(--Moderate-violet);
+}
+
+/*Jonathan*/
+
+.item__jonathan{
+	background-color: var(--Very-dark-grayish-blue);
+}
+.name__jonathan,
+.title__jonathan h3{
+	color: var(--White);
+}
+.subname__jonathan,
+.text__jonathan{
+	color: var(--White);
+	filter: opacity(50%);
+}
+
+/*Jeanette*/
+
+.item__jeanette{
+	background-color: var(--White);
+}
+.name__jeanette,
+.title__jeanette h3{
+	color: var(--Very-dark-blackish-blue);
+}
+.subname__jeanette,
+.text__jeanette{
+	color: var(--Very-dark-blackish-blue);
+	filter: opacity(50%);
+}
+
+/*Patrick*/
+
+.item__patrick{
+	background-color: var(--Very-dark-blackish-blue);
+}
+.name__patrick,
+.title__patrick h3{
+	color: var(--White);
+}
+.subname__patrick,
+.text__patrick{
+	color: var(--White);
+	filter: opacity(50%);
+}
+.item__patrick .review__image{
+	border: 2px solid hsl(0, 0%, 100%, 0.30);
+	background-color: var(--Moderate-violet);
+}
+
+/*Kira*/
+
+.item__kira{
+	background-color: var(--White);
+}
+.name__kira,
+.title__kira h3{
+	color: var(--Very-dark-blackish-blue);
+}
+.subname__kira,
+.text__kira{
+	color: var(--Very-dark-blackish-blue);
+	filter: opacity(50%);
+}
+
+/*Atribution*/
+
+.attribution{
+	font-size: 0.75rem;
+	text-align: center;
+}
+.attribution a{
+	color: hsl(228, 45%, 44%);
+}

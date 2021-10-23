@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/ttoomas/testimonials-grid-challenge
+- Solution URL: https://github.com/ttoomas/testimonials-grid-section
 
 ### Built with
 

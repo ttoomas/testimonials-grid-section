@@ -6,7 +6,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -23,7 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/ttoomas/testimonials-grid-section
+- Solution URL: [Github](https://github.com/ttoomas/testimonials-grid-section)
+- Live Site URL : [Live Site - Github](https://ttoomas.github.io/testimonials-grid-section/)
 
 ### Built with
 
